@@ -1,0 +1,14 @@
+<h1>notifications Zone!</h1> 
+<p> Vous avez {{notifList.length}} notifications</p>
+<div>
+  <button (click)="ShowNotifications()">{{ btnTest }}</button>
+    @if (show) {
+    <div>
+        <ul>
+            @for (item of notifList; track $index) {
+                <li>{{ item.message }}</li>
+            }
+        </ul>
+    </div>
+}
+</div>

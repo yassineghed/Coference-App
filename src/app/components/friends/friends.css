@@ -1,0 +1,11 @@
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+ 
+.inputs input {
+  width: 200px;
+  padding: 3px 4px;
+}
+ 
