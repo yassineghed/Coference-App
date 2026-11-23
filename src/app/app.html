@@ -1,6 +1,9 @@
 <app-header></app-header>
 <app-navbar></app-navbar>
 <app-profil></app-profil>
+<app-conference-list (conferenceSelected)="selectedConference = $event"></app-conference-list>
+<app-conference-detail [conference]="selectedConference"></app-conference-detail>
 <app-friends></app-friends>
-<app-notifications></app-notifications>  
+<app-notifications></app-notifications>
+<router-outlet></router-outlet>
 <app-footer></app-footer>

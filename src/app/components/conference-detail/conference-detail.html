@@ -1,0 +1,12 @@
+<section class="detail-card" id="conference" aria-labelledby="detail-heading">
+  <h2 id="detail-heading">Détail de la conférence</h2>
+  @if (conference; as selected) {
+    <h3>{{ selected.title }}</h3>
+    <p>{{ selected.description }}</p>
+    <p><strong>Date :</strong> {{ selected.date | date: 'dd/MM/yyyy' }}</p>
+    <p><strong>Lieu :</strong> {{ selected.place }}</p>
+    <p><strong>Participants :</strong> {{ selected.nbParticipants }} / {{ selected.maxParticipants }}</p>
+  } @else {
+    <p class="empty">Sélectionnez une conférence dans la liste pour afficher ses détails.</p>
+  }
+</section>

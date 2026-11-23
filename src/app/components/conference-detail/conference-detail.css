@@ -1,0 +1,29 @@
+:host {
+  display: block;
+}
+
+.detail-card {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 24px;
+  background: #fff;
+  border-left: 5px solid #2f6fb4;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+h2,
+h3 {
+  color: #173b67;
+}
+
+.empty {
+  color: #6b7280;
+}
+
+@media (max-width: 600px) {
+  .detail-card {
+    margin: 16px 10px;
+    padding: 18px;
+  }
+}
